@@ -9,7 +9,7 @@ import BurgerMenu from "../../Pictures/menu.svg?react";
 import LogoName from "../../Pictures/logo_Name.svg?react";
 import LogoText from "../../Pictures/logo_Text.svg?react";
 import LogoSVG from "../../Pictures/logo.svg?react";
-import Ellipse from "../../Pictures/ellipse.svg?react";
+// import Ellipse from "../../Pictures/ellipse.svg?react";
 import { useState } from "react";
 import { Modal } from "../../Utils/Modal/Modal";
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
         </BurgerMenuContainer>
         <GetInTouch>
           <span>Get in touch</span>
-          <Ellipse />
+          {/* <Ellipse /> */}
         </GetInTouch>
       </Container>
       {showModal && (
