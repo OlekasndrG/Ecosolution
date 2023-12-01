@@ -7,6 +7,8 @@ export const Overlay = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  background-color: rgba(23, 61, 51, 0.25);
+  backdrop-filter: blur(2px);
 `;
 
 export const InnerContainer = styled.div`
