@@ -12,7 +12,7 @@ import LogoSVG from "../../Pictures/icons/logo.svg?react";
 import Ellipse from "../../Pictures/icons/ellipse.svg?react";
 import { useEffect, useState } from "react";
 import { Modal } from "../../Utils/Modal/Modal";
-import { Menu } from "../Menu/Menu";
+import Menu from "../Menu/Menu";
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => setShowModal(true);
@@ -33,12 +33,6 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
-
-  //  if (isOpen) {
-  //    document.body.classList.add("no-overflow");
-  //  } else {
-  //    document.body.classList.remove("no-overflow");
-  //  }
 
   // eslint-disable-next-line no-unused-vars
 

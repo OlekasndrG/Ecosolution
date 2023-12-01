@@ -33,17 +33,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid var(--primary-green-color);
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   @media screen and (min-width: ${tablet}) {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    justify-content: space-between;
   }
 
   @media screen and (min-width: ${desktop}) {
+    justify-content: left;
     gap: 296px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
   }
 `;
 
@@ -57,14 +58,13 @@ export const Title = styled.h1`
   @media screen and (min-width: ${tablet}) {
     width: 300px;
     font-size: 48px;
-    line-height: 48px;
+
     margin-bottom: 0;
   }
 
   @media screen and (min-width: ${desktop}) {
     width: 485px;
     font-size: 64px;
-    line-height: 1;
   }
 `;
 

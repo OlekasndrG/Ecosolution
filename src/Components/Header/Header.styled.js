@@ -3,12 +3,12 @@ import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
 
 export const HeaderContainer = styled.header`
   position: fixed;
-  overflow: hidden;
+
   background-color: ${({ scrolling }) =>
     scrolling ? "white" : "var(--body-background)"};
   top: 0;
   left: 0;
-  padding: 36px 20px 0 20px;
+  padding: 36px 20px 36px 20px;
 
   min-height: 40px;
   width: 100%;

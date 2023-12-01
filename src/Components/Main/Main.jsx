@@ -11,7 +11,7 @@ import {
 } from "./Main.styled";
 import Arrow from "../../Pictures/icons/arrow_Right.svg?react";
 import image from "../../Pictures/wind_turbine_clean_energy.jpg";
-export const Main = () => {
+const Main = () => {
   return (
     <MainContainer>
       <Container>
@@ -39,3 +39,4 @@ export const Main = () => {
     </MainContainer>
   );
 };
+export default Main;

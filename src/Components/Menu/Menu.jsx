@@ -12,7 +12,7 @@ import {
   SocialLink,
   NavLink,
 } from "./Menu.styled";
-export const Menu = ({ onClose }) => {
+const Menu = ({ onClose }) => {
   return (
     <MenuContainer>
       <CrossContainer onClick={onClose}>
@@ -70,3 +70,4 @@ export const Menu = ({ onClose }) => {
 Menu.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
+export default Menu;
