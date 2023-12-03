@@ -6,8 +6,8 @@ export const MenuContainer = styled.div`
   flex-direction: column;
 
   position: absolute;
-  z-index: 2;
-  top: 36px;
+  z-index: 4;
+  top: 108px;
   right: 20px;
   width: calc(100% - 40px);
   min-height: 360px;
@@ -40,10 +40,9 @@ export const CrossContainer = styled.div`
   color: var(--white-text);
   background-color: transparent;
   border: none;
-  transition: 0.4s ease;
+  transition: var(--transition);
 
   &:hover {
-    transition: 0.4s ease;
     color: var(--primary-green-color);
   }
 
@@ -76,10 +75,9 @@ export const NavLink = styled.a`
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.96px;
-  transition: 0.4s ease;
+  transition: var(--transition);
 
   &:hover {
-    transition: 0.4s ease;
     color: var(--white-text);
   }
 `;
@@ -92,10 +90,9 @@ export const SocialContainer = styled.div`
 
 export const SocialLink = styled.a`
   color: var(--white-text);
-  transition: 0.4s ease;
+  transition: var(--transition);
 
   &:hover {
-    transition: 0.4s ease;
     color: var(--primary-green-color);
   }
 `;

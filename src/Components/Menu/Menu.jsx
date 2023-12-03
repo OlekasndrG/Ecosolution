@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Arrow from "../../Pictures/icons/arrow_Right_Up.svg?react";
+import Arrow from "../../Pictures/icons/arrow_BurgerMenu.svg?react";
 import Instagram from "../../Pictures/icons/instagram.svg?react";
 import Facebook from "../../Pictures/icons/facebook.svg?react";
 import Cross from "../../Pictures/icons/cross.svg?react";

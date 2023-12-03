@@ -3,7 +3,7 @@ import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
 
 export const HeaderContainer = styled.header`
   position: fixed;
-
+  z-index: 3;
   background-color: ${({ scrolling }) =>
     scrolling ? "white" : "var(--body-background)"};
   top: 0;
@@ -32,7 +32,7 @@ export const LogoContainer = styled.a`
   gap: 4px;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.4s ease;
+  transition: var(--transition);
   color: var(--primary-dark-color);
   &:hover {
     color: var(--primary-green-color);
@@ -83,7 +83,7 @@ export const GetInTouch = styled.a`
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.64px;
-    transition: all 0.4s ease;
+    transition: var(--transition);
     &:hover {
       background-color: var(--primary-dark-color);
       color: var(--primary-green-color);
