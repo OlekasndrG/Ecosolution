@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
+import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -24,18 +25,6 @@ export const HeaderContainer = styled.header`
 
   @media screen and (min-width: ${desktop}) {
     min-width: ${desktop};
-  }
-`;
-
-export const LogoContainer = styled.a`
-  display: flex;
-  gap: 4px;
-  align-items: center;
-  justify-content: space-between;
-  transition: var(--transition);
-  color: var(--primary-dark-color);
-  &:hover {
-    color: var(--primary-green-color);
   }
 `;
 
@@ -64,7 +53,7 @@ export const BurgerMenuContainer = styled.button`
   }
 `;
 
-export const GetInTouch = styled.a`
+export const GetInTouch = styled(Link)`
   display: none;
 
   @media screen and (min-width: ${tablet}) {

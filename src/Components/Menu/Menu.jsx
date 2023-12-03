@@ -1,18 +1,26 @@
 import PropTypes from "prop-types";
 import Arrow from "../../Pictures/icons/arrow_BurgerMenu.svg?react";
-import Instagram from "../../Pictures/icons/instagram.svg?react";
-import Facebook from "../../Pictures/icons/facebook.svg?react";
+
 import Cross from "../../Pictures/icons/cross.svg?react";
+
 import {
   MenuContainer,
   CrossContainer,
-  SocialContainer,
   NavContainer,
   NavList,
-  SocialLink,
   NavLink,
 } from "./Menu.styled";
+import Socials from "../Socials/Socials";
 const Menu = ({ onClose }) => {
+  //   const handleMenuClick = (e) => {
+  //     console.log("asd");
+  //     console.log(e.target);
+
+  // setTimeout(() => {
+  //   console.log("asdasdadad");
+  //   onClose();
+  // }, 1000);
+  //   };
   return (
     <MenuContainer>
       <CrossContainer onClick={onClose}>
@@ -22,48 +30,83 @@ const Menu = ({ onClose }) => {
       <NavContainer>
         <NavList>
           <li>
-            <NavLink>
+            <NavLink
+              to="main"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-150}
+              // onSetActive={() =>
+              //   setTimeout(() => {
+              //     console.log("asdasdadad");
+              //     onClose();
+              //   }, 1000)
+              // }
+              // activeStyle={{ color: "var(--primary-green-color)" }}
+            >
               <span>Main</span> <Arrow />
             </NavLink>
           </li>
           <li>
-            <NavLink>
+            <NavLink
+              to="about"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-150}
+            >
               <span>About</span> <Arrow />
             </NavLink>
           </li>
           <li>
-            <NavLink>
+            <NavLink
+              to="cases"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-150}
+              // onSetActive={() =>
+              //   setTimeout(() => {
+              //     console.log("asdasdadad");
+              //     onClose();
+              //   }, 1000)
+              // }
+            >
               <span>Cases</span> <Arrow />
             </NavLink>
           </li>
           <li>
-            <NavLink>
+            <NavLink
+              to="FAQ"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-150}
+            >
               <span>FAQ</span> <Arrow />
             </NavLink>
           </li>
           <li>
-            <NavLink>
+            <NavLink
+              to="contact_Us"
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-150}
+              onSetActive={() =>
+                setTimeout(() => {
+                  console.log("asdasdadad");
+                  onClose();
+                }, 1000)
+              }
+            >
               <span>Contact Us</span> <Arrow />
             </NavLink>
           </li>
         </NavList>
+        {/* <p onClick={handleMenuClick}>sadsadadasdasd</p> */}
       </NavContainer>
-      <SocialContainer>
-        <SocialLink
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Instagram />
-        </SocialLink>
-        <SocialLink
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Facebook />
-        </SocialLink>
-      </SocialContainer>
+      <Socials />
     </MenuContainer>
   );
 };

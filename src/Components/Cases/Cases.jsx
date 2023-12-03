@@ -14,7 +14,7 @@ import data from "../../data/cases.json";
 
 import { register } from "swiper/element/bundle";
 import Slide from "./Slide/Slide";
-// register();
+import { Element } from "react-scroll";
 
 const Cases = () => {
   const swiperRef = useRef(null);
@@ -94,38 +94,40 @@ const Cases = () => {
   }, []);
 
   return (
-    <Container>
-      <Head>
-        <Title>Successful cases of our company</Title>
-        <Pagination>
-          <div className="swiper-pagination"></div>
-          <Buttons>
-            <Button type="button" className="prev">
-              <SwipeLeft />
-            </Button>
-            <Button type="button" className="next">
-              <SwipeRight />
-            </Button>
-          </Buttons>
-        </Pagination>
-      </Head>
-      <swiper-container
-        ref={swiperRef}
-        init="false"
-        speed="500"
-        css-mode="true"
-        mousewheel={true}
-        noSwiping={false}
-      >
-        {data.map((slide) => {
-          return (
-            <swiper-slide key={slide.id}>
-              <Slide slide={slide} />
-            </swiper-slide>
-          );
-        })}
-      </swiper-container>
-    </Container>
+    <Element name="cases">
+      <Container>
+        <Head>
+          <Title>Successful cases of our company</Title>
+          <Pagination>
+            <div className="swiper-pagination"></div>
+            <Buttons>
+              <Button type="button" className="prev">
+                <SwipeLeft />
+              </Button>
+              <Button type="button" className="next">
+                <SwipeRight />
+              </Button>
+            </Buttons>
+          </Pagination>
+        </Head>
+        <swiper-container
+          ref={swiperRef}
+          init="false"
+          speed="500"
+          css-mode="true"
+          mousewheel={true}
+          noSwiping={false}
+        >
+          {data.map((slide) => {
+            return (
+              <swiper-slide key={slide.id}>
+                <Slide slide={slide} />
+              </swiper-slide>
+            );
+          })}
+        </swiper-container>
+      </Container>
+    </Element>
   );
 };
 

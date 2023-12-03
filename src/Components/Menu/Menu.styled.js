@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { tablet } from "../../Utils/Breakpoints/Breakpoints";
-
+import { Link } from "react-scroll";
 export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const MenuContainer = styled.div`
   right: 20px;
   width: calc(100% - 40px);
   min-height: 360px;
-  height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
 
   /* overflow: scroll; */
   padding: 24px;
@@ -67,7 +67,7 @@ export const NavList = styled.ul`
   gap: 8px;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   display: inline-block;
   width: 100%;
   color: rgba(255, 255, 255, 0.25);
@@ -80,19 +80,7 @@ export const NavLink = styled.a`
   &:hover {
     color: var(--white-text);
   }
-`;
-
-export const SocialContainer = styled.div`
-  display: flex;
-  margin-top: auto;
-  gap: 8px;
-`;
-
-export const SocialLink = styled.a`
-  color: var(--white-text);
-  transition: var(--transition);
-
-  &:hover {
+  &.active {
     color: var(--primary-green-color);
   }
 `;

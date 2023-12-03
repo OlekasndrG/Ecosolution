@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
-
+import { Link } from "react-scroll";
 export const MainContainer = styled.section`
   margin-top: 222px;
   margin-bottom: 36px;
@@ -15,16 +15,6 @@ export const MainContainer = styled.section`
     margin-bottom: 120px;
   }
 `;
-
-// export const TitleContainer = styled.div`
-//   max-width: 320px;
-//   margin-bottom: 24px;
-//   @media screen and (min-width: ${tablet}) {
-//   }
-
-//   @media screen and (min-width: ${desktop}) {
-//   }
-// `;
 
 export const Container = styled.div`
   /* max-width: 320px; */
@@ -94,7 +84,7 @@ export const Description = styled.p`
   }
 `;
 
-export const LearnMoreLink = styled.a`
+export const LearnMoreLink = styled(Link)`
   display: inline-flex;
   height: 39px;
   padding: 4px 4px 4px 16px;
