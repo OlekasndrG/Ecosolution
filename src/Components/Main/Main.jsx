@@ -14,7 +14,7 @@ import image from "../../Pictures/wind_turbine_clean_energy.jpg";
 import { Element } from "react-scroll";
 const Main = () => {
   return (
-    <Element name="main" id="main">
+    <Element name="main">
       <MainContainer>
         <Container>
           <Title>RENEWABLE ENERGY For any task</Title>

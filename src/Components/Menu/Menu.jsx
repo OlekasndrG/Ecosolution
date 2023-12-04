@@ -12,15 +12,6 @@ import {
 } from "./Menu.styled";
 import Socials from "../Socials/Socials";
 const Menu = ({ onClose }) => {
-  //   const handleMenuClick = (e) => {
-  //     console.log("asd");
-  //     console.log(e.target);
-
-  // setTimeout(() => {
-  //   console.log("asdasdadad");
-  //   onClose();
-  // }, 1000);
-  //   };
   return (
     <MenuContainer>
       <CrossContainer onClick={onClose}>
@@ -36,13 +27,11 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              // onSetActive={() =>
-              //   setTimeout(() => {
-              //     console.log("asdasdadad");
-              //     onClose();
-              //   }, 1000)
-              // }
-              // activeStyle={{ color: "var(--primary-green-color)" }}
+              onClick={() =>
+                setTimeout(() => {
+                  onClose();
+                }, 750)
+              }
             >
               <span>Main</span> <Arrow />
             </NavLink>
@@ -54,6 +43,11 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
+              onClick={() =>
+                setTimeout(() => {
+                  onClose();
+                }, 750)
+              }
             >
               <span>About</span> <Arrow />
             </NavLink>
@@ -65,12 +59,11 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              // onSetActive={() =>
-              //   setTimeout(() => {
-              //     console.log("asdasdadad");
-              //     onClose();
-              //   }, 1000)
-              // }
+              onClick={() =>
+                setTimeout(() => {
+                  onClose();
+                }, 750)
+              }
             >
               <span>Cases</span> <Arrow />
             </NavLink>
@@ -82,6 +75,11 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
+              onClick={() =>
+                setTimeout(() => {
+                  onClose();
+                }, 750)
+              }
             >
               <span>FAQ</span> <Arrow />
             </NavLink>
@@ -93,18 +91,16 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              onSetActive={() =>
+              onClick={() =>
                 setTimeout(() => {
-                  console.log("asdasdadad");
                   onClose();
-                }, 1000)
+                }, 750)
               }
             >
               <span>Contact Us</span> <Arrow />
             </NavLink>
           </li>
         </NavList>
-        {/* <p onClick={handleMenuClick}>sadsadadasdasd</p> */}
       </NavContainer>
       <Socials />
     </MenuContainer>

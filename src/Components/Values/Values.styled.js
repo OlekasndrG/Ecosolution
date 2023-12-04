@@ -107,7 +107,7 @@ export const TitleContainer = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   font-size: 16px;
   line-height: 1.5;
 

@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Values from "./Components/Values/Values";
+import Questions from "./Components/FAQ/FAQ";
 
 function App() {
   scrollSpy.update();
@@ -17,6 +18,7 @@ function App() {
       <Values />
       <Electricity />
       <Cases />
+      <Questions />
       <Contact_Us />
       <Footer />
     </MainContainer>

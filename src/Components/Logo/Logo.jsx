@@ -4,7 +4,11 @@ import LogoSVG from "../../Pictures/icons/logo.svg?react";
 import { LogoContainer } from "./Logo.styled";
 const Logo = () => {
   return (
-    <LogoContainer>
+    <LogoContainer
+      href="https://www.ecosolution.com/main"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <LogoSVG />
       <LogoName />
       <LogoText />

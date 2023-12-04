@@ -37,7 +37,7 @@ export const CrossContainer = styled.div`
 
   letter-spacing: -0.64px;
 
-  color: var(--white-text);
+  color: var(--text-menu-white);
   background-color: transparent;
   border: none;
   transition: var(--transition);
@@ -78,7 +78,7 @@ export const NavLink = styled(Link)`
   transition: var(--transition);
 
   &:hover {
-    color: var(--white-text);
+    color: var(--text-menu-white);
   }
   &.active {
     color: var(--primary-green-color);

@@ -16,7 +16,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   text-align: center;
   font-size: 28px;
   line-height: 28px;

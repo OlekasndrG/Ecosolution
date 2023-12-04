@@ -17,7 +17,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   font-size: 28px;
   line-height: 28px;
   margin-bottom: 24px;

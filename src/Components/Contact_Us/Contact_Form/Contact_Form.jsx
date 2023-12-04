@@ -6,7 +6,10 @@ import {
   Label,
   FormInput,
   InputContainer,
+  Button,
 } from "./Contact_Form.styled";
+import Arrow from "../../../Pictures/icons/arrow_Right.svg?react";
+
 const initialValues = {
   name: "",
   email: "",
@@ -65,7 +68,6 @@ const ContactsForm = () => {
               <Label htmlFor="message">* Message: </Label>
 
               <FormInput
-                // as="textarea"
                 component="textarea"
                 name="message"
                 placeholder="Your message"
@@ -74,20 +76,15 @@ const ContactsForm = () => {
 
               <ErrorMessage name="message" component={FormikError} />
             </InputContainer>
-            <button
-              type="submit"
-              //   disabled={isSubmitting || !touched || !isValid || !dirty}
-            >
-              Send
-            </button>
+            <Button type="submit" aria-label="submit form button">
+              <span>Send</span>
+              <Arrow />
+            </Button>
           </ContactForm>
         )}
       </Formik>
     </>
   );
 };
-// ContactsForm.propTypes = {
-//   handleSubmit: PropTypes.func.isRequired,
-// };
 
 export default ContactsForm;

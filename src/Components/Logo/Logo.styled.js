@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const LogoContainer = styled.a`
+  cursor: pointer;
   display: flex;
   gap: 4px;
   align-items: center;

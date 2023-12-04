@@ -6,7 +6,7 @@ export const SocialContainer = styled.div`
 `;
 
 export const SocialLink = styled.a`
-  color: var(--white-text);
+  color: var(--text-menu-white);
   transition: var(--transition);
 
   &:hover {

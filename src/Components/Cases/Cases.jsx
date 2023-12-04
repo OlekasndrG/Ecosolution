@@ -25,9 +25,7 @@ const Cases = () => {
   };
 
   useEffect(() => {
-    // if (swiperRef.current) {
-    //   console.log("Sds");
-    // }
+  
     const swiperContainer = swiperRef.current;
     register();
     const params = {

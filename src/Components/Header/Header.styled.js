@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
-import { Link } from "react-scroll";
-
+import CustomLink from "../../Utils/Link/Link";
 export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 3;
@@ -53,29 +52,10 @@ export const BurgerMenuContainer = styled.button`
   }
 `;
 
-export const GetInTouch = styled(Link)`
+export const GetInTouch = styled(CustomLink)`
   display: none;
 
   @media screen and (min-width: ${tablet}) {
     display: inline-flex;
-    padding: 10px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-
-    background-color: var(--primary-green-color);
-    border: none;
-    border-radius: 500px;
-
-    color: var(--text-color);
-    font-size: 16px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.64px;
-    transition: var(--transition);
-    &:hover {
-      background-color: var(--primary-dark-color);
-      color: var(--primary-green-color);
-    }
   }
 `;

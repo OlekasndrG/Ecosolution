@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { Modal } from "../../Utils/Modal/Modal";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
+
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => setShowModal(true);
@@ -41,7 +42,8 @@ const Header = () => {
         <BurgerMenuContainer onClick={openModal}>
           <BurgerMenu />
         </BurgerMenuContainer>
-        <GetInTouch to="contact_us" smooth={true} duration={500} offset={-150}>
+
+        <GetInTouch section={"contact_Us"}>
           <span>Get in touch</span>
           <Ellipse />
         </GetInTouch>
