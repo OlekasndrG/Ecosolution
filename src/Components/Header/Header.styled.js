@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
-import CustomLink from "../../Utils/Link/Link";
+
 export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 3;
@@ -52,10 +52,9 @@ export const BurgerMenuContainer = styled.button`
   }
 `;
 
-export const GetInTouch = styled(CustomLink)`
+export const GetInTouch = styled.div`
   display: none;
-
   @media screen and (min-width: ${tablet}) {
-    display: inline-flex;
+    display: block;
   }
 `;

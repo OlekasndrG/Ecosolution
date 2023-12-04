@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { Modal } from "../../Utils/Modal/Modal";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
+import CustomLink from "../../Utils/Link/Link";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,10 +43,11 @@ const Header = () => {
         <BurgerMenuContainer onClick={openModal}>
           <BurgerMenu />
         </BurgerMenuContainer>
-
-        <GetInTouch section={"contact_Us"}>
-          <span>Get in touch</span>
-          <Ellipse />
+        <GetInTouch>
+          <CustomLink section={"contact_Us"}>
+            <span>Get in touch</span>
+            <Ellipse />
+          </CustomLink>
         </GetInTouch>
       </Container>
       {showModal && (
