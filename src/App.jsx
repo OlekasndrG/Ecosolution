@@ -12,16 +12,22 @@ import Questions from "./Components/FAQ/FAQ";
 function App() {
   scrollSpy.update();
   return (
-    <MainContainer>
-      <Header />
-      <Main />
-      <Values />
-      <Electricity />
-      <Cases />
-      <Questions />
-      <Contact_Us />
-      <Footer />
-    </MainContainer>
+    <>
+      <MainContainer>
+        <Header />
+      </MainContainer>
+      <MainContainer>
+        <Main />
+        <Values />
+        <Electricity />
+        <Cases />
+        <Questions />
+        <Contact_Us />
+      </MainContainer>
+      <MainContainer>
+        <Footer />
+      </MainContainer>
+    </>
   );
 }
 

@@ -5,7 +5,14 @@ const Slide = ({ slide }) => {
   return (
     <div>
       <ImageHolder>
-        <img src={slide.img} alt={slide.name} />
+        <img
+          src={slide.img}
+          srcSet={`${slide.img} 1x, ${slide.img2x} 2x`}
+          alt={slide.name}
+          loading="lazy"
+        />
+
+        {/* <img src={slide.img} alt={slide.name} /> */}
       </ImageHolder>
       <Info>
         <Name>

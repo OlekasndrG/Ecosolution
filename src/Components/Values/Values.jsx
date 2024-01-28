@@ -14,8 +14,24 @@ import CPU from "../../Pictures/icons/cpu_Charge.svg?react";
 import Global from "../../Pictures/icons/global_Edit.svg?react";
 import Circle from "../../Pictures/icons/maximize_Circle.svg?react";
 import Ranking from "../../Pictures/icons/ranking.svg?react";
-import SolarMan from "../../Pictures/man_worker_firld_by_solar_panels.jpg";
-import WindFarm from "../../Pictures/wind_farms_fields.jpg";
+
+import WindFarm from "../../Pictures/desktop_wind-farms.jpg";
+import WindFarm2x from "../../Pictures/desktop_wind-farms@2x.jpg";
+import WindFarmWebp from "../../Pictures/desktop_wind-farms.webp";
+
+import WindFarmWebp2x from "../../Pictures/desktop_wind-farms@2x.webp";
+// import WindFarmMobile2x from "../../Pictures/mobile_wind-farms@2x.jpg";
+// import WindFarmMobile from "../../Pictures/mobile_wind-farms.jpg";
+import WindFarmTablet from "../../Pictures/tablet_wind-farms.jpg";
+import WindFarmTablet2x from "../../Pictures/tablet_wind-farms@2x.jpg";
+import Solarpanel from "../../Pictures/desktop_solar-panels.jpg";
+import Solarpanel2x from "../../Pictures/desktop_solar-panels@2x.jpg";
+import SolarpanelWebp from "../../Pictures/desktop_solar-panels.webp";
+import SolarpanelWebp2x from "../../Pictures/desktop_solar-panels@2x.webp";
+import SolarpanelTablet from "../../Pictures/tablet_solar-panels.jpg";
+import SolarpanelTablet2x from "../../Pictures/tablet_solar-panels@2x.jpg";
+// import SolarpanelMobile from "../../Pictures/mobile_solar-panels.jpg";
+// import SolarpanelMobile2x from "../../Pictures/mobile_solar-panels@2x.jpg";
 import { Element } from "react-scroll";
 const Values = () => {
   return (
@@ -55,10 +71,50 @@ const Values = () => {
             </TextContainer>
           </Item>
           <Picture>
-            <img src={WindFarm} alt="men on wind farm " />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${SolarpanelWebp}, ${SolarpanelWebp2x} 2x`}
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${WindFarm}, ${WindFarm2x} 2x`}
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet={`${WindFarmTablet}, ${WindFarmTablet2x} 2x`}
+              />
+              <img
+                src={WindFarm}
+                srcSet={`${WindFarmTablet}, ${WindFarmTablet2x} 2x`}
+                alt="farmers with find farm"
+                loading="lazy"
+              />
+            </picture>
           </Picture>
           <Picture>
-            <img src={SolarMan} alt="man worker on field by solar panels" />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${WindFarmWebp}, ${WindFarmWebp2x} 2x`}
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1280px)"
+                srcSet={`${Solarpanel}, ${Solarpanel2x} 2x`}
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet={`${SolarpanelTablet}, ${SolarpanelTablet2x} 2x`}
+              />
+              <img
+                src={Solarpanel}
+                srcSet={`${SolarpanelTablet}, ${SolarpanelTablet2x} 2x`}
+                alt="Man-worker goes near solar panels"
+                sizes="(max-width: 767px) 320px, (min-width: 768px) 768px, (min-width: 1280px) 1280px"
+              />
+            </picture>
           </Picture>
 
           <Item>

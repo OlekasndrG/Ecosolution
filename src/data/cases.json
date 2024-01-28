@@ -2,6 +2,7 @@
   {
     "id": 1,
     "img": "/cases/beautiful_view_wind_turbines.jpg",
+    "img2x": "/cases/beautiful_view_wind_turbines@2x.jpg",
     "location": "Lviv Region, Radekhiv town",
     "name": "Private Enterprise “ZAKHIDNYI BUH”",
     "type": "Wind Power for auto field irrigation",
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "img": "/cases/solar_Panel_view.jpg",
+    "img2x": "/cases/solar_Panel_view@2x.jpg",
     "location": "Zhytomyr city",
     "name": "Private Enterprise “Bosch”",
     "type": "Solar Panels for industrial use",
@@ -18,6 +20,7 @@
   {
     "id": 3,
     "img": "/cases/factory_View.jpg",
+    "img2x": "/cases/factory_View@2x.jpg",
     "location": "Rivne city",
     "name": "Private Enterprise “Biotech”",
     "type": "Thermal modules",
@@ -26,6 +29,7 @@
   {
     "id": 4,
     "img": "./cases/landscape_with_windmills.jpg",
+    "img2x": "/cases/landscape_with_windmills@2x.jpg",
     "location": "Kherson city",
     "name": "Private Enterprise “HealthyFarm”",
     "type": "Wind power",
@@ -34,6 +38,7 @@
   {
     "id": 5,
     "img": "cases/nuclear_power_plant_center_spain.jpg",
+    "img2x": "/cases/nuclear_power_plant_center_spain@2x.jpg",
     "location": "Zaporizhia city",
     "name": "Private Enterprise “Biotech”",
     "type": "Mini nuclear stations",

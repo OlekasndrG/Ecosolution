@@ -15,8 +15,7 @@ import CustomLink from "../../Utils/Link/Link";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
-  const openModal = () => setShowModal(true);
-  const closeModal = () => setShowModal(false);
+
   const [scrolling, setScrolling] = useState(undefined);
   function listenScrollEvent() {
     if (window.scrollY > 20) {
@@ -35,12 +34,29 @@ const Header = () => {
   }, []);
 
   // eslint-disable-next-line no-unused-vars
+  const openModal = () => {
+    setShowModal(true);
+    document.body.style.overflow = "hidden";
+  };
+  const closeModal = () => {
+    setShowModal(false);
+    document.body.style.overflow = "visible";
+  };
 
+  // if (isOpen) {
+  //   document.body.classList.add("no-overflow");
+  // } else {
+  //   document.body.classList.remove("no-overflow");
+  // }
   return (
     <HeaderContainer scrolling={scrolling}>
       <Logo />
       <Container>
-        <BurgerMenuContainer onClick={openModal}>
+        <BurgerMenuContainer
+          type="button"
+          aria-label="toggle Modal menu"
+          onClick={openModal}
+        >
           <BurgerMenu />
         </BurgerMenuContainer>
         <GetInTouch>

@@ -54,6 +54,7 @@ export const Counter = styled.div`
   justify-content: center;
   align-items: center;
   gap: 8px;
+  /* width: 948px; */
 
   & h4 {
     font-weight: 700;
@@ -67,12 +68,17 @@ export const Counter = styled.div`
     }
 
     @media screen and (min-width: ${desktop}) {
-      font-size: 164px;
+      width: 822px;
+
+      padding-left: ${(props) =>
+        props.$paddingLeft ? props.$paddingLeft : "0"};
+      font-size: ${(props) => (props.$fontSize ? props.$fontSize : "164px")};
+      background-color: ${(props) => (props.colors ? props.colors : "red")};
       line-height: 164px;
     }
   }
 
-  & p {
+  & span {
     font-family: "Oswald", sans-serif;
     font-size: 24px;
     line-height: 24px;

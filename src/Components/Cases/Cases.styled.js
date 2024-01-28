@@ -48,7 +48,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Pagination = styled.div`
+export const PaginationContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -71,7 +71,9 @@ export const Pagination = styled.div`
     width: 620px;
     padding-left: 161px;
   }
-
+  & .swiper-pagination {
+    position: static;
+  }
   & .swiper-pagination-current {
     color: var(--text-color);
   }
