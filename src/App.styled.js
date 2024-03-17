@@ -4,7 +4,7 @@ import { mobile, tablet, desktop } from "./Utils/Breakpoints/Breakpoints";
 export const MainContainer = styled.div`
   min-width: 360px;
   /* max-width: ${mobile}; */
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 0 20px;
 

@@ -30,6 +30,7 @@ export const ValuesTitle = styled.h2`
   width: 320px;
   font-size: 36px;
   line-height: 1;
+  margin-bottom: 24px;
   text-transform: uppercase;
 
   font-size: 28px;

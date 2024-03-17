@@ -33,7 +33,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
-  // eslint-disable-next-line no-unused-vars
   const openModal = () => {
     setShowModal(true);
     document.body.style.overflow = "hidden";

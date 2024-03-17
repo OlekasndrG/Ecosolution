@@ -73,7 +73,8 @@ export const Counter = styled.div`
       padding-left: ${(props) =>
         props.$paddingLeft ? props.$paddingLeft : "0"};
       font-size: ${(props) => (props.$fontSize ? props.$fontSize : "164px")};
-      background-color: ${(props) => (props.colors ? props.colors : "red")};
+      /* background-color: ${(props) =>
+        props.colors ? props.colors : "red"}; */
       line-height: 164px;
     }
   }

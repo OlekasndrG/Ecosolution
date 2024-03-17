@@ -2,16 +2,16 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
 import { Link } from "react-scroll";
 export const MainContainer = styled.section`
-  margin-top: 222px;
+  margin-top: 111px;
   margin-bottom: 36px;
 
   @media screen and (min-width: ${tablet}) {
-    margin-top: 240px;
+    margin-top: 175px;
     margin-bottom: 100px;
   }
 
   @media screen and (min-width: ${desktop}) {
-    margin-top: 264px;
+    margin-top: 190px;
     margin-bottom: 120px;
   }
 `;
