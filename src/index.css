@@ -25,7 +25,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  scrollbar-gutter: stable;
+}
 body {
   background-color: #f3f5fa;
   font-family: "FiraSans-Regular", sans-serif;
@@ -76,17 +78,20 @@ a {
   cursor: pointer;
 }
 
-/* Hide the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-  display: none;
-}
-
-/* Optional: Adjust scrollbar width and appearance */
 ::-webkit-scrollbar {
-  width: 0;
+  width: 8px; /* Adjust width as needed */
 }
 
-/* Optional: Adjust scrollbar track appearance */
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1); /* Change to match your design */
+  background-color: transparent; /* Make scrollbar track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Transparent color with some opacity */
+  border-radius: 6px; /* Round corners for thumb */
 }
