@@ -75,3 +75,18 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Hide the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Optional: Adjust scrollbar width and appearance */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Optional: Adjust scrollbar track appearance */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Change to match your design */
+}

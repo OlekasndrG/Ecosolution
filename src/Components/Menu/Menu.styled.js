@@ -7,13 +7,12 @@ export const MenuContainer = styled.div`
 
   position: absolute;
   z-index: 4;
-  top: 108px;
-  right: 20px;
+  top: 130px;
+  right: 40px;
   width: calc(100% - 40px);
   min-height: 360px;
   max-height: calc(100vh - 60px);
 
-  /* overflow: scroll; */
   padding: 24px;
 
   background-color: rgba(23, 61, 51, 0.75);
@@ -24,6 +23,7 @@ export const MenuContainer = styled.div`
     width: 320px;
   }
 `;
+
 export const CrossContainer = styled.div`
   display: flex;
   cursor: pointer;
